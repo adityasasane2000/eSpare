@@ -1,13 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #EBEAE6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* .note{
+font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+width: 304px;
+height: 24px;
+top: 198px;
+left: 220px;
+
+} */
+
+.title{
+font-family: Montserrat;
+font-size: 60px;
+font-weight: 600;
+line-height: 73px;
+letter-spacing: 0em;
+text-align: left;
+width: 694px;
+height: 203px;
+top: 269px;
+left: 100px;
+
+}
+
+/* .info{
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+width: 643px;
+height: 126px;
+top: 516px;
+left: 101px;
+
+} */
+
+.btn{
+width: 151px;
+height: 55px;
+top: 57px;
+left: 1189px;
+border-radius: 10px, 10px, 10px, 0px;
+}
+
