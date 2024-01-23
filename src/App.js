@@ -5,7 +5,7 @@ import Info from './features/Info';
 const App = () => {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Info />
     </>
   )

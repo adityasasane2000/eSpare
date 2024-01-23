@@ -35,7 +35,7 @@ function WebDevPage() {
             </div>
 
             <div className='w-[100%]'>
-                <div className='bg-black text-white p-5 h-40 space-y-6 mt-16 sm:flex sm:space-x-16 md:h-40 md:w-[100%]'>
+                <div className='bg-black text-white p-5 h-42 space-y-6 mt-16 sm:flex sm:space-x-16 md:h-40 md:w-[100%]'>
                     <h1 className='text-xl font-semibold md:text-2xl lg:text-3xl'>The Projects recent we do.</h1>
 
                     <p className='text-sm md:text-base lg:text-xl'>
@@ -44,7 +44,7 @@ function WebDevPage() {
                 </div>
             </div>
 
-            <div className='flex justify-center items-center -mt-16 p-9 sm:w-[100%] sm:space-x-10 xl:space-x-32'>
+            <div className='flex justify-center items-center -mt-8 w-[100%] sm:w-[100%] sm:space-x-10 xl:space-x-32'>
                     <div className=' bg-white w-48 mt-6 p-3 space-y-3 rounded-2xl sm:w-[23rem] md:w-[28rem] lg:w-[32rem] xl:w-[35rem]'>
                         <img src="./screenshot-166-1@2x.png" alt="" />
                     </div>

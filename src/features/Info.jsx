@@ -18,12 +18,12 @@ function Info() {
 
             <div className='flex flex-col space-y-16 justify-center items-center md:flex md:flex-row-reverse '>
 
-                <div>
-                    <img className="rounded-2xl w-[100%] " src="./alesiakazantcevaxlm6fpwk5qunsplash-1@2x.png" alt="image" />
+                <div className='md:flex md:justify-center'>
+                    <img className="rounded-2xl w-[100%] md:w-[80%]" src="./alesiakazantcevaxlm6fpwk5qunsplash-1@2x.png" alt="image" />
                 </div>
 
                 <div>
-                    <h1 className='text-2xl  font-semibold md:text-3xl xl:text-4xl'>Take complex applications simple for users</h1>
+                    <h1 className='text-2xl font-semibold md:text-3xl xl:text-4xl'>Take complex applications simple for users</h1>
                 </div>
 
             </div>
@@ -35,7 +35,7 @@ function Info() {
             <div>
                 {<div className='flex justify-center space-x-[20%]'>
                     <button className='bg-yellow-400 text-lg font-semibold w-[30%] h-10 rounded-xl '>Lets's talk</button>
-                    <button className='bg-yellow-400 text-lg font-semibold w-[40%] rounded-xl '>Projects</button>
+                    <button className='bg-yellow-400 text-lg font-semibold w-[30%] h-10 rounded-xl  '>Projects</button>
                 </div>}
             </div>
 
