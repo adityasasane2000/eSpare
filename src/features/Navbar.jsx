@@ -19,7 +19,7 @@ function Navbar() {
     <Disclosure as="nav" className="#EBEAE6">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto w-100% max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -41,8 +41,8 @@ function Navbar() {
                     alt="Your Company"
                   />
                 </div>
-                <div className="p-72 hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-8">
+                <div className="sm:block flex justify-center items-center">
+                  <div className="flex justify-center items-center">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -57,14 +57,14 @@ function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              {/* <div className="absolute inset-y-0 right-0 flex items-end w-[10%]">
         
                 <button
-                  className=" btn cursor-pointer bg-black text-white font-semibold leading-[normal] min-w-[151px] md:ml-[0] ml-[41px] text-center text-lg"
+                  className=" btn cursor-pointer bg-black text-white font-semibold leading-[normal] text-center text-lg "
                 >
                   Contact Us{" "}
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 

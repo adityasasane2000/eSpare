@@ -1,23 +1,12 @@
 import React from 'react'
 import Navbar from './features/Navbar'
-import Into from './features/Into';
-
-// const router = createBrowserRouter([
-//   {
-//     path:"/",
-//     element:<Into/>
-//   },
-//   {
-//     path:"/web",
-//     element:<Devlopment></Devlopment>
-//   },
-// ]);
+import Info from './features/Info';
 
 const App = () => {
   return (
     <>
       <Navbar/>
-      <Into />
+      <Info />
     </>
   )
 }

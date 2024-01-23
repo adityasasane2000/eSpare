@@ -12,6 +12,8 @@ import CRMPage from './pages/CRMPage';
 import SchoolERPPage from './pages/SchoolERPPage';
 import CustomDevPage from './pages/CustomDevPage';
 import DigitalMarketingPage from './pages/DigitalMarketingPage';
+import SigninPage from './pages/SigninPage';
+import ContactUsPage from './pages/ContactUsPage';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
   {
     path:"/Digital-Marketing",
     element:<DigitalMarketingPage/>
+  },
+  {
+    path:"/Signin",
+    element:<SigninPage/>
+  },
+  {
+    path:"/Contactus",
+    element:<ContactUsPage/>
   }
 ]);
 
