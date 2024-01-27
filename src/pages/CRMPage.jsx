@@ -1,13 +1,12 @@
 import React from 'react'
 import Navbar from '../features/Navbar';
-import IntroCard from '../features/IntroCard';
 import Card from '../features/Services/CRM/components/CRMcard';
 import Info from '../features/Info';
 
 function CRMPage() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Info></Info>
 
             {/* Info */}

@@ -2,11 +2,12 @@ import React from 'react';
 import IndustriesCard from '../features/Services/app-development/components/IndustriesCard';
 import AppCard from '../features/Services/app-development/components/AppCard';
 import Info from '../features/Info'
+import Navbar from '../features/Navbar';
 
 function AppDevPage() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Info></Info>
 
             {/* Info */}
@@ -50,7 +51,7 @@ function AppDevPage() {
             <div className='p-7 mt-8 space-y-14'>
                  <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold text-nowrap md:text-4xl lg:text-5xl'>Our Apps</h1>
 
-                <div className='flex flex-col justify-between items-center space-y-20'>
+                <div className='flex flex-col justify-between items-center space-y-20 lg:grid lg:grid-cols-3 lg:place-items-center'>
                     <AppCard></AppCard>
                     <AppCard></AppCard>
                     <AppCard></AppCard>

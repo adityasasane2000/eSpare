@@ -1,13 +1,12 @@
 import React from 'react'
 import Navbar from '../features/Navbar';
-import IntroCard from '../features/IntroCard';
 import MarketingCard from '../features/Services/Digital-Marketing/components/MarketingCard';
 import Info from '../features/Info';
 
 function DigitalMarketingPage() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Info></Info>
 
             {/* Info */}

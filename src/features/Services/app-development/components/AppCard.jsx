@@ -2,7 +2,7 @@ import React from 'react'
 
 function AppCard() {
   return (
-    <div className='bg-gray-200 flex flex-col justify-center items-center space-y-7 p-5 w-[70%]'>
+    <div className='bg-gray-200 flex flex-col justify-center items-center space-y-7 p-5 w-[100%] sm:w-[70%] lg:w-[80%]'>
         <img className="w-[50%] md:w-[30%]" src="./photo.png" alt="" />
 
         <div className='flex flex-col justify-center items-center space-y-4 sm:space-y-10'>

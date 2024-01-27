@@ -6,7 +6,7 @@ import Info from '../features/Info';
 function SchoolERPPage() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Info></Info>
 
             {/* Info */}

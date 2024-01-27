@@ -6,12 +6,12 @@ import Info from '../features/Info'
 function HRMSPage() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Info></Info>
 
             {/* Info */}
             <div className='p-7 space-y-10 mt-10'>
-                <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold text-nowrap md:text-4xl lg:text-5xl'>About eSparse HRMS Solutions</h1>
+                <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold  md:text-4xl lg:text-5xl'>About eSparse HRMS Solutions</h1>
 
                 <div className='sm:w-[100%] bg-white text-xs sm:text-base p-7 rounded-3xl md:text-base md:w-[100%] xl:text-xl'>
                     <p>

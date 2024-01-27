@@ -1,9 +1,13 @@
 import React from 'react'
+import ServicesCard from './Services/Home/components/ServicesCard'
+import ApprochCard from './Services/Home/components/ApprochCard'
+import ContactUsPage from '../pages/ContactUsPage'
+import ContactusCard from './Services/Home/components/ContactusCard'
 
 function Info() {
     return (
 
-        <div className='mt-16 p-4 space-y-10'>
+        <div className='w-[100%] '>
             <div className='h-12'>
                 <div className='flex'>
                     <img
@@ -16,27 +20,23 @@ function Info() {
 
             </div>
 
-            <div className='flex flex-col space-y-16 justify-center items-center md:flex md:flex-row-reverse '>
+            <div className='flex flex-col p-4 space-y-16 justify-center items-center md:flex md:flex-row-reverse '>
 
                 <div className='md:flex md:justify-center'>
-                    <img className="rounded-2xl w-[100%] md:w-[80%]" src="./alesiakazantcevaxlm6fpwk5qunsplash-1@2x.png" alt="image" />
+                    <img className="rounded-2xl w-[100%] md:w-[85%] h-" src="./alesiakazantcevaxlm6fpwk5qunsplash-1@2x.png" alt="image" />
                 </div>
 
-                <div>
+                <div className='md:w-[70%] space-y-8'>
                     <h1 className='text-2xl font-semibold md:text-3xl xl:text-4xl'>Take complex applications simple for users</h1>
+                    <p className='xl:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    <div>
+                        {<div className='flex justify-center space-x-[20%]'>
+                            <button className='bg-yellow-400 text-lg font-semibold w-[40%] h-auto rounded-xl text-nowrap'>Lets's talk</button>
+                            <button className='bg-white text-lg font-semibold w-[40%] h-auto rounded-xl  '>Projects</button>
+                        </div>}
+                    </div>
                 </div>
 
-            </div>
-
-            <div>
-                <p className='xl:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-            </div>
-
-            <div>
-                {<div className='flex justify-center space-x-[20%]'>
-                    <button className='bg-yellow-400 text-lg font-semibold w-[30%] h-10 rounded-xl '>Lets's talk</button>
-                    <button className='bg-yellow-400 text-lg font-semibold w-[30%] h-10 rounded-xl  '>Projects</button>
-                </div>}
             </div>
 
         </div>

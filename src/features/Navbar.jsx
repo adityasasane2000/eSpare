@@ -1,95 +1,83 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-const navigation = [
-  { name: 'Home', href: '#', current: false },
-  { name: 'About Us', href: '#', current: true },
-  { name: 'Services', href: '#', current: false },
-  { name: 'Career', href: '#', current: false },
-  { name: 'Blog', href: '#', current: false },
-]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+// function handleClick({e}){
+//   console.log(e.target.value);
+// }
+
 
 function Navbar() {
-  return (
-    <Disclosure as="nav" className="#EBEAE6">
-      {({ open }) => (
-        <>
-          <div className="mx-auto w-100% max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                </div>
-                <div className="sm:block flex justify-center items-center">
-                  <div className="flex justify-center items-center">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className='text-black rounded-md px-3 py-2 text-sm w-16 font-medium'
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                        <div className={`underline ${item.current ? "visible" : "hidden"} hover:w-100% hover:bg-black h-0.5 bg-black w-100% transiti duration-0.2 ease-in-out`}></div>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              {/* <div className="absolute inset-y-0 right-0 flex items-end w-[10%]">
-        
-                <button
-                  className=" btn cursor-pointer bg-black text-white font-semibold leading-[normal] text-center text-lg "
-                >
-                  Contact Us{" "}
-                </button>
-              </div> */}
-            </div>
-          </div>
+  let [open, setOpen] = useState(false);
+  let [select, setSelect] = useState();
+  const navigate = useNavigate();
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+  function handleChange(event) {
+    console.log(event.target.value);
+    setSelect(event.target.value);
+    navigate(`/${event.target.value}`);
+  }
+
+  return (
+    // <div className='top-0 left-0 md:flex w-[100%] justify-around'>
+    <div className='md:flex items-center justify-center py-4 md:px-10 md-7'>
+      <div className='font-bold text-2xl xl:text-3xl cursor-pointer flex items-center text-gray-800 '>
+        <span className='text-3xl text-indigo-600 mr-1 pt-2 '>
+          <img className="h-14 inline" src='./Icon01-2.png'></img>
+        </span>
+        eSparse
+      </div>
+
+      <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+        <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
+      </div>
+
+      <ul className={`md:flex md:items-center pb-12 md:static left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-75 ease-in md:mt-10 md:space-x-5 ${open ? "mt-2 opacity-100 h-[96]" : "-mt-10 opacity-0 h-0 "} md:opacity-100 `}>
+        <li key="Home" className='md:ml-10 text-xl md:text-base md:my-0 my-7 xl:text-2xl'>
+          <Link to={"/"} className='text-gray-800 hover:text-gray-400 duration-500'>Home</Link>
+        </li>
+
+        <li key="AboutUs" className='md:ml-8 text-xl md:text-nowrap md:text-base md:my-0 my-7 xl:text-2xl'>
+          <a href="/aboutus" className='text-gray-800 hover:text-gray-400 duration-500'>About Us</a>
+        </li>
+
+        <li key="Services" className='md:ml-5 text-xl md:text-base md:my-0 my-7 xl:text-2xl'>
+          <select onChange={handleChange} className='w-24 xl:w-32 bg-transparent '>
+            <option value="">Services</option>
+            <option value="web-development">WEB DEVELOPMENT</option>
+            <option value="App-development">APP DEVELOPMENT</option>
+            <option value="Manufacturing-ERP">MANUFACTURING ERP SYSTEM</option>
+            <option value="HRMS-Solutions">HRMS & PAYROLL SYSTEM</option>
+            <option value="CRM-System">ESPARSE CRM SYSTEM</option>
+            <option value="School-ERP">SCHOOL & COLLAGE ERP</option>
+            <option value="Custom-development">SOFTWARE DEVELOPMENT</option>
+            <option value="Digital-Marketing">DIGITAL MARKETING</option>
+          </select>
+        </li>
+
+        <li key="Carrer" className='md:ml-7 text-xl md:text-base md:my-0 my-7 xl:text-2xl'>
+          <Link to={""} className='text-gray-800 hover:text-gray-400 duration-500'>Carrer</Link>
+        </li>
+
+        <li key="Blog" className='md:ml-10 text-xl md:text-base md:my-0 my-7 xl:text-2xl'>
+          <Link to={""} className='text-gray-800 hover:text-gray-400 duration-500'>Blog</Link>
+        </li>
+
+        <li key="Login" className='md:ml-10 text-xl md:text-base md:my-0 my-7 xl:text-2xl'>
+          <Link to={"/Signin"}>Login</Link>
+        </li>
+
+        {/* <div className=''> */}
+          <button className='bg-black text-white py-2 px-6 rounded md:ml-0 md:w-auto md:h-10 hover:bg-gray-600 duration-500 xl:text-2xl'>
+            Conatct Us
+          </button>
+        {/* </div> */}
+
+      </ul>
+
+    </div>
   )
 }
 
-export default Navbar;
+export default Navbar

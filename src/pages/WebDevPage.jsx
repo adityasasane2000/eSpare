@@ -1,11 +1,12 @@
 import React from 'react'
 import FeaturesCard from '../features/Services/web-development/components/FeaturesCard'
 import Info from '../features/Info'
+import Navbar from '../features/Navbar';
 
 function WebDevPage() {
     return (
         <div className=''>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Info></Info>
 
             {/* Info */}
@@ -44,7 +45,7 @@ function WebDevPage() {
                 </div>
             </div>
 
-            <div className='flex justify-center items-center -mt-8 w-[100%] sm:w-[100%] sm:space-x-10 xl:space-x-32'>
+            <div className='flex justify-center items-center -mt-8 w-[100%] sm:w-[100%] sm:space-x-10 xl:space-x-32 md:p-10'>
                     <div className=' bg-white w-48 mt-6 p-3 space-y-3 rounded-2xl sm:w-[23rem] md:w-[28rem] lg:w-[32rem] xl:w-[35rem]'>
                         <img src="./screenshot-166-1@2x.png" alt="" />
                     </div>

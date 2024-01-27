@@ -14,11 +14,16 @@ import CustomDevPage from './pages/CustomDevPage';
 import DigitalMarketingPage from './pages/DigitalMarketingPage';
 import SigninPage from './pages/SigninPage';
 import ContactUsPage from './pages/ContactUsPage';
+import AboutUsPage from './pages/AboutUsPage';
 
 const router = createBrowserRouter([
   {
     path:"/",
     element:<App/>
+  },
+  {
+    path:"/aboutus",
+    element:<AboutUsPage/>
   },
   {
     path:"/web-development",
@@ -28,7 +33,7 @@ const router = createBrowserRouter([
     path:"/App-development",
     element:<AppDevPage/>
   },
-  {
+  { 
     path:"/Manufacturing-ERP",
     element:<ManufacturingERPPage/>
   },

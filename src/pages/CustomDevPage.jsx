@@ -6,7 +6,7 @@ import Info from '../features/Info';
 function CustomDevPage() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Info></Info>
 
             {/* Info */}
@@ -22,24 +22,24 @@ function CustomDevPage() {
             <div className='p-6'>
                 <h1 className='text-2xl sm:text-4xl font-semibold md:text-3xl lg:text-4xl'>Why Choose Us</h1>
                 
-                <div className='grid grid-cols-2 p-3 place-items-center gap-10 space-x-2 text-base font-semibold'>
+                <div className='grid grid-cols-2 p-3 place-items-center gap-7 space-x-2 text-base font-semibold'>
                     
-                    <div className='space-y-5 bg-white p-8 rounded-2xl'>
+                    <div className='space-y-5 bg-white p-3 rounded-2xl max-w-48'>
                         <img src='./Group 598.png'></img>
                         <p>One-stop Solutions</p>
                     </div>
 
-                    <div className='space-y-5 bg-white p-8 rounded-2xl'>
+                    <div className='space-y-5 bg-white p-3 rounded-2xl max-w-48'>
                         <img src='./Group 599.png'></img>
                         <p>Continuous Improvement</p>
                     </div>
 
-                    <div className='space-y-5 bg-white p-8 rounded-2xl'>
+                    <div className='space-y-5 bg-white p-3 rounded-2xl max-w-48'>
                         <img src='./Group 599.png'></img>
                         <p>Strong Technical Expertise</p>
                     </div>
 
-                    <div className='space-y-5 bg-white p-8 rounded-2xl'>
+                    <div className='space-y-5 bg-white p-3 rounded-2xl max-w-48'>
                         <img src='./Group 599.png'></img>
                         <p>Priority to Client Satisfaction</p>
                     </div>

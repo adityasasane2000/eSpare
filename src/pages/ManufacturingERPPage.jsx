@@ -6,12 +6,12 @@ import Info from '../features/Info';
 function ManufacturingERPPage() {
     return (
         <div>
-            {/* <Navbar></Navbar> */}
+            <Navbar></Navbar>
             <Info></Info>
 
             {/* Info */}
-            <div className='p-7 space-y-10 mt-10'>
-                <h1 className='max-w-96 text-xl sm:text-4xl font-semibold text-nowrap md:text-4xl lg:text-5xl'>What is Sparse Manufacturing ERP?</h1>
+            <div className='p-6 space-y-10 mt-10'>
+                <h1 className='max-w-96 text-base sm:text-4xl font-semibold  md:text-4xl lg:text-5xl'>What is Sparse Manufacturing ERP?</h1>
 
                 <div className='sm:w-[100%] bg-white text-xs sm:text-base p-7 rounded-3xl md:text-base md:w-[100%] xl:text-xl'>
                     <p>
@@ -22,7 +22,7 @@ function ManufacturingERPPage() {
 
 
             <div className='flex flex-col justify-center items-center space-y-8 mt-10'>
-                <h1 className='text-2xl font-semibold xl:-ml-[10%] mt-5 sm:text-4xl md:text-4xl lg:text-5xl'>What are the Benefits of Sparse Manufacturing ERP?</h1>
+                <h1 className='text-2xl p-4 font-semibold xl:-ml-[10%] mt-5 sm:text-4xl md:text-4xl lg:text-5xl'>What are the Benefits of Sparse Manufacturing ERP?</h1>
 
                 <div className='space-y-10 p-8 md:grid md:grid-cols-2 md:place-items-center md:gap-20 xl:grid xl:grid-cols-4'>
                     <ErpCard title={"Increased Productivity"} info={"Automate business processes, so businesses can Increase production efficiency, save costs & maximize profits"}></ErpCard>

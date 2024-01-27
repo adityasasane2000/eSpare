@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from './features/Navbar'
-import Info from './features/Info';
+import Home from './features/Home';
 
 const App = () => {
   return (
-    <>
-      {/* <Navbar/> */}
-      <Info />
-    </>
+    <div className='w-[100%]'>
+      <Navbar/>
+      <Home />
+    </div>
   )
 }
 
