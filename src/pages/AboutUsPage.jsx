@@ -3,7 +3,8 @@ import Info from '../features/Info'
 import AboutCard from '../features/Services/About/components/AboutCard'
 import EventCard from '../features/Services/About/components/EventCard'
 import Navbar from '../features/Navbar';
-
+import ContactusCard from '../features/Services/Home/components/ContactusCard';
+import Footer from '../features/Footer';
 
 function AboutUsPage() {
   return (
@@ -25,7 +26,7 @@ function AboutUsPage() {
         </div>
 
         <div className='bg-white space-y-9 space-x-5 p-3 flex flex-col items-center sm:flex-row'>
-                <img className="w-[80%] sm:w-[50%] xl:w-[40%] place-items-center"src="./group-25@2x.png" alt="" />
+                <img className="w-[80%] sm:w-[50%] xl:w-[35%] place-items-center"src="./group-25@2x.png" alt="" />
 
                 <div className='space-y-4'>
                     <h2 className='text-lg font-semibold lg:text-3xl'>We design digital products , brands and Expriences</h2>
@@ -48,6 +49,12 @@ function AboutUsPage() {
                   <EventCard></EventCard>
                 </div>
           </div>
+
+          <div>
+              <ContactusCard></ContactusCard>
+          </div>
+
+          <Footer></Footer>
       
 
     </div>

@@ -19,19 +19,6 @@ code {
     monospace;
 }
 
-/* .note{
-font-family: Inter;
-font-size: 18px;
-font-weight: 600;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-width: 304px;
-height: 24px;
-top: 198px;
-left: 220px;
-
-} */
 
 .title{
 font-family: Montserrat;
@@ -44,22 +31,8 @@ width: 694px;
 height: 203px;
 top: 269px;
 left: 100px;
-
 }
 
-/* .info{
-font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-width: 643px;
-height: 126px;
-top: 516px;
-left: 101px;
-
-} */
 
 .btn{
 width: 151px;
@@ -69,3 +42,6 @@ left: 1189px;
 border-radius: 10px, 10px, 10px, 0px;
 }
 
+p{
+  font-style: Inter;
+}

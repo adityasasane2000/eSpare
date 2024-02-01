@@ -15,6 +15,8 @@ import DigitalMarketingPage from './pages/DigitalMarketingPage';
 import SigninPage from './pages/SigninPage';
 import ContactUsPage from './pages/ContactUsPage';
 import AboutUsPage from './pages/AboutUsPage';
+import CareerPage from './pages/CareerPage';
+import BlogPage from './pages/BlogPage';
 
 const router = createBrowserRouter([
   {
@@ -64,6 +66,14 @@ const router = createBrowserRouter([
   {
     path:"/Contactus",
     element:<ContactUsPage/>
+  },
+  {
+    path:"/Career",
+    element:<CareerPage/>
+  },
+  {
+    path:"/Blogs",
+    element:<BlogPage/>
   }
 ]);
 

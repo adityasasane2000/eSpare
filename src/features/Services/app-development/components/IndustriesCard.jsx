@@ -1,10 +1,8 @@
 import React from 'react'
 
-function IndustriesCard() {
+function IndustriesCard({name}) {
   return (
-        <div className='bg-white text-black w-[100%] xl:w-[50%] rounded-xl p-5 h-14 flex justify-center items-center text-2xl font-medium'>
-                    Healthcare
-        </div>
+        <div className='bg-white text-black w-[95%] xl:w-[100%] rounded-xl p-2 h-16 flex justify-center items-center text-base xl:text-2xl font-medium text-nowrap'>{name}</div>
   )
 }
 
