@@ -16,7 +16,7 @@ function Info() {
 
             </div>
 
-            <div className='flex flex-col p-4 space-y-16 justify-center items-center md:flex md:flex-row-reverse '>
+            <div className='flex flex-col p-4 space-y-16 justify-center items-center md:flex md:flex-row-reverse'>
 
                 <div className='relative flex justify-center md:flex md:justify-evenly'>
                     <img className="rounded-2xl w-[85%] md:w-[80%] xl:w-[65%]" src="./alesiakazantcevaxlm6fpwk5qunsplash-1@2x.png" alt="image" />
@@ -44,7 +44,7 @@ function Info() {
                     <p className='text-sm xl:text-base font-[Inter]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
                     {/* <div> */}
                     <div className='flex justify-start space-x-[20%]'>
-                        <button className='bg-yellow-400 text-lg font-semibold w-auto h-10 rounded-xl text-nowrap p-2'>Lets's talk</button>
+                        <button className='bg-yellow-400 text-lg font-semibold w-auto h-10 rounded-xl text-nowrap p-2 hover:bg-black hover:text-yellow-400'>Lets's talk</button>
                         <button className='bg-white text-lg font-semibold w-auto h-10 rounded-xl p-2'>Projects</button>
                     </div>
                     {/* </div> */}

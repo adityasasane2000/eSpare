@@ -12,7 +12,7 @@ function SchoolERPPage() {
 
             {/* Info */}
             <div className='p-7 space-y-10 mt-10'>
-                <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold md:text-3xl lg:text-3xl font-[Montserrat] md:text-nowrap'>About ESPARSE CRM</h1>
+                <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold md:text-3xl lg:text-3xl font-[Montserrat] md:text-nowrap'>Why eSparse School ERP?</h1>
 
                 <div className='sm:w-[100%] bg-white text-xs sm:text-base p-7 rounded-3xl md:text-sm md:w-[100%] xl:text-base'>
                     <p>A school ERP is a collection of computer instructions, specially designed to manage the day-to-day administrative tasks of schools. School management software allow schools to digitally monitor the daily activities along with managing all the resources and information on a single platform.In contemporary, most of schools are using school managements software to increase efficiency, productivity, and hence saving a lot of time involved to carry out various administrative operations.</p>

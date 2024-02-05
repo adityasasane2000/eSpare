@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../features/Navbar';
-import IntroCard from '../features/IntroCard';
 import Info from '../features/Info';
 import Footer from '../features/Footer';
 

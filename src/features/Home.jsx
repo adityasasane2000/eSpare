@@ -4,8 +4,77 @@ import ApprochCard from './Services/Home/components/ApprochCard'
 import ContactusCard from './Services/Home/components/ContactusCard'
 import Footer from './Footer';
 import Info from './Info';
+import UserCard from '../features/Services/Home/components/UserCard';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 function Home() {
+
+    const settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
+    };
+
+    // const data = [
+    //     {
+    //         image:"male@2x.png",
+    //         name:"Sourav Joshi",
+    //         msg:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"
+    //     },
+    //     {
+    //         image:"male@2x.png",
+    //         name:"Sourav Joshi",
+    //         msg:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"
+    //     },
+    //     {
+    //         image:"male@2x.png",
+    //         name:"Sourav Joshi",
+    //         msg:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"
+    //     },
+    //     {
+    //         image:"male@2x.png",
+    //         name:"Sourav Joshi",
+    //         msg:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"
+    //     },
+    //     {
+    //         image:"male@2x.png",
+    //         name:"Sourav Joshi",
+    //         msg:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"
+    //     },
+        
+    // ]
+
     return (
 
         <div className='w-[100%] space-y-10 mt-9'>
@@ -51,9 +120,9 @@ function Home() {
             </div> */}
 
             <div className='space-y-5 p-5'>
-                <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold text-nowrap md:text-4xl lg:text-5xl'>Our Services</h1>
+                <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold text-nowrap md:text-3xl lg:text-3xl font-[Montserrat]'>Our Services</h1>
 
-                <div className='flex flex-col justify-center items-center space-y-4 sm:grid sm:grid-cols-2 sm:gap-2 sm:place-items-baseline md:grid md:grid-cols-3 md:gap-2 md:p-4 md:place-items-center'>
+                <div className='flex flex-col justify-center items-center space-y-4 sm:grid sm:grid-cols-2 sm:gap-2 sm:place-items-center md:grid md:grid-cols-3 md:gap-2 md:p-4 md:place-items-center'>
                     <ServicesCard></ServicesCard>
                     <ServicesCard></ServicesCard>
                     <ServicesCard></ServicesCard>
@@ -63,26 +132,28 @@ function Home() {
                 </div>
             </div>
 
-            <div className='bg-white space-y-9 space-x-5 p-3 flex flex-col items-center sm:flex-row'>
-                <img className="w-[80%] sm:w-[50%] xl:w-[35%] place-items-center"src="./group-25@2x.png" alt="" />
+            <div className='bg-white relative space-y-12 space-x-5 p-2 flex flex-col items-center sm:flex-row md:gap-16'>
+                <img className="w-[30%] md:w-[18%] lg:w-[16%] absolute right-5 top-5 md:left-60 lg:left-56 xl:left-64" src='./Group 24.svg'/>
+                <img className="w-[70%] relative sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[28%] place-items-center" src="./group-25@2x.png" alt="" />
 
                 <div className='space-y-4'>
-                    <h2 className='text-lg font-semibold lg:text-3xl'>We design digital products , brands and Expriences</h2>
-                    <p className='text-sm xl:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                    <p>See More</p>
+                    <h2 className='text-xl font-semibold lg:text-3xl font-[Inter]'>We design digital products , brands and Expriences</h2>
+                    <p className='text-xs xl:text-lg font-[Inter]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    <Link to={"/aboutus"} className='font-[Inter] inline-flex'>See More</Link>
+                    <img className="inline ml-[5%]" src='./Vector 10.svg'/>
                 </div>
             </div>
 
 
             <div className='space-y-7 p-4'>
-                <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold text-nowrap md:text-4xl lg:text-5xl'>Our Approch</h1>
+                <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold text-nowrap md:text-3xl lg:text-3xl font-[Montserrat]'>Our Approch</h1>
                 <div className='space-y-7 flex flex-col items-center sm:grid sm:grid-cols-2 sm:place-items-center'>
-                    <ApprochCard title={"Discuss and Analysis"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"}></ApprochCard>
-                    <ApprochCard title={"Prototyping"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"}></ApprochCard>
-                    <ApprochCard title={"Software Specification"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"}></ApprochCard>
-                    <ApprochCard title={"Software Development Approach"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"}></ApprochCard>
-                    <ApprochCard title={"Rapid Application Development"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"}></ApprochCard>
-                    <ApprochCard title={"Launch and Support"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"}></ApprochCard>
+                    <ApprochCard title={"Discuss and Analysis"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"} img={"Ellipse 3.svg"}></ApprochCard>
+                    <ApprochCard title={"Prototyping"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"} img={"Ellipse 4.svg"}></ApprochCard>
+                    <ApprochCard title={"Software Specification"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"} img={"Ellipse 5.svg"}></ApprochCard>
+                    <ApprochCard title={"Software Development Approach"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"} img={"Ellipse 6.svg"}></ApprochCard>
+                    <ApprochCard title={"Rapid Application Development"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"} img={"Ellipse 7.svg"}></ApprochCard>
+                    <ApprochCard title={"Launch and Support"} info={"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"} img={"Ellipse 8.svg"}></ApprochCard>
                 </div>
             </div>
 
@@ -106,7 +177,7 @@ function Home() {
                     <img className='' src="./screenshot-169-1@2x.png" alt="" />
                 </div>
 
-                <div className=' bg-white w-48 p-3 -mt-28 space-y-3 rounded-2xl sm:w-[23rem] md:w-[28rem] lg:w-[32rem] xl:w-[35rem]'>
+                <div className=' bg-white w-48 p-3 -mt-28 space-y-3 rounded-2xl sm:w-[23rem] md:w-[28rem] lg:w-[32rem] xl:w-[35rem] sm'>
                     <img src="./screenshot-171-1@2x.png" alt="" />
                 </div>
 
@@ -115,6 +186,17 @@ function Home() {
 
             <div>
                 <ContactusCard></ContactusCard>
+            </div>
+
+            <div className='w-[100%]'>
+                <Slider {...settings} className='ml-10 flex items-center w-[80%] md:w-[90%] lg:w-[95%]'>
+                    <UserCard></UserCard>    
+                    <UserCard></UserCard>    
+                    <UserCard></UserCard>
+                    <UserCard></UserCard>  
+                    <UserCard></UserCard>   
+                    <UserCard></UserCard> 
+                </Slider>
             </div>
 
             <Footer></Footer>

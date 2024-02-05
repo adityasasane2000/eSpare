@@ -9,7 +9,7 @@ function AppCard() {
             <div className='flex flex-col justify-center items-center space-y-5'>
             <h2 className='text-xl font-semibold xl:text-3xl'>App Name</h2>
               <p className='text-xs xl:text-base'>Lorem Ipsum dollar set Lorem Ipsum dollar se Lorem Ipsum dollar seLorem Ipsum dollar se Lorem Ipsum dollar set Lorem Ipsum dollar se Lorem Ipsum dollar seLorem Ipsum dollar se Lorem Ipsum dollar set Lorem Ipsum dollar se Lorem Ipsum dollar seLorem Ipsum dollar se Lorem Ipsum dollar set Lorem Ipsum dollar se Lorem Ipsum dollar seLorem Ipsum dollar se</p>
-              <button className='bg-yellow-400 text-base font-medium w-auto h-9 rounded-xl text-nowrap p-2 xl:text-xl xl:h-10'>Download App</button>
+              <button className='bg-yellow-400 text-base font-medium w-auto h-9 rounded-xl text-nowrap p-2 xl:text-xl xl:h-10 hover:bg-black hover:text-yellow-400'>Download App</button>
             </div>
         </div>
     </div>

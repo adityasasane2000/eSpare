@@ -2,7 +2,7 @@ import React from 'react'
 
 function JobCard({time,role,expr}) {
   return (
-    <div className='bg-white w-[70%] rounded-2xl h-50'> 
+    <div className='bg-white w-[60%] rounded-2xl h-50'> 
         <div className='p-4 space-y-2'>
             <h4 className='text-sm'>{time}</h4>
             <h1 className='font-semibold'>{role}</h1>

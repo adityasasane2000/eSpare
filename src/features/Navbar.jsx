@@ -43,7 +43,7 @@ function Navbar() {
         </li>
 
         <li key="AboutUs" className='md:ml-8 text-xl md:text-nowrap md:text-base md:my-0 my-7 xl:text-xl'>
-          <a href="/aboutus" className='text-black hover:text-gray-400 duration-500 font-[Inter]'>About Us</a>
+          <Link to={"/aboutus"} className='text-black hover:text-gray-400 duration-500 font-[Inter]'>About Us</Link>
         </li>
 
         <li key="Services" className='text-black md:ml-5 text-xl md:text-base md:my-0 my-7 xl:text-xl font-[Inter]'>

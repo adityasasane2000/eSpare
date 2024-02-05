@@ -40,7 +40,7 @@ function ContactusCard() {
                             </div>
 
                             <div className='flex justify-center items-center'>
-                                <button className='bg-yellow-300 w-[60%] md:w-64 lg:w-72 h-12 p-1 text-base font-bold rounded-2xl'>Send Message</button>
+                                <button className='bg-yellow-300 w-[60%] md:w-64 lg:w-72 h-12 p-1 text-base font-bold rounded-2xl hover:bg-black hover:text-yellow-400'>Send Message</button>
                             </div>
                         </div>
 
