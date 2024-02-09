@@ -123,12 +123,12 @@ function Home() {
                 <h1 className='max-w-96 text-2xl sm:text-4xl font-semibold text-nowrap md:text-3xl lg:text-3xl font-[Montserrat]'>Our Services</h1>
 
                 <div className='flex flex-col justify-center items-center space-y-4 sm:grid sm:grid-cols-2 sm:gap-2 sm:place-items-center md:grid md:grid-cols-3 md:gap-2 md:p-4 md:place-items-center'>
-                    <ServicesCard></ServicesCard>
-                    <ServicesCard></ServicesCard>
-                    <ServicesCard></ServicesCard>
-                    <ServicesCard></ServicesCard>
-                    <ServicesCard></ServicesCard>
-                    <ServicesCard></ServicesCard>
+                    <ServicesCard title={"Software Development"}></ServicesCard>
+                    <ServicesCard title={"App Development"}></ServicesCard>
+                    <ServicesCard title={"MANUFACTURING ERP SYSTEM"}></ServicesCard>
+                    <ServicesCard title={"HRMS & PAYROLL SYSTEM"}></ServicesCard>
+                    <ServicesCard title={"ESPARSE CRM SYSTEM"}></ServicesCard>
+                    <ServicesCard title={"SCHOOL & COLLEGES ERP"}></ServicesCard>
                 </div>
             </div>
 
@@ -139,8 +139,8 @@ function Home() {
                 <div className='space-y-4'>
                     <h2 className='text-xl font-semibold lg:text-3xl font-[Inter]'>We design digital products , brands and Expriences</h2>
                     <p className='text-xs xl:text-lg font-[Inter]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                    <Link to={"/aboutus"} className='font-[Inter] inline-flex'>See More</Link>
-                    <img className="inline ml-[5%]" src='./Vector 10.svg'/>
+                    <Link to={"/aboutus"} className='font-[Inter] inline-flex'>See More <spa><img className="inline ml-5" src='./Vector 10.svg'/></spa></Link>
+                    {/* <img className="inline ml-[2%]" src='./Vector 10.svg'/> */}
                 </div>
             </div>
 

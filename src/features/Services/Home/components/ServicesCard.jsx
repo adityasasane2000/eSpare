@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ServicesCard() {
+function ServicesCard({title}) {
     return (
 
 
         <div class="w-[70%] sm:w-[60%] md:w-[80%] p-4 bg-white border border-gray-200 rounded-t-lg rounded-r-lg shadow dark:bg-black dark:border-gray-700 hover:bg-yellow-300 hover:text-black text-white">
             <p href="#">
-                <h5 class="mb-2 text-lg font-semibold tracking-tight space-x-20 inline-flex justify-center text-center">Software Development</h5>
+                <h5 class="mb-2 text-lg font-semibold tracking-tight space-x-20 inline-flex justify-center text-center">{title}</h5>
             </p>
             <Link to="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center">
                 Explore
