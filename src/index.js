@@ -18,6 +18,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import CareerPage from './pages/CareerPage';
 import BlogPage from './pages/BlogPage';
 import JobDescription from './pages/JobDescription';
+import BlogDescription from './pages/BlogDescription';
 
 const router = createBrowserRouter([
   {
@@ -77,8 +78,12 @@ const router = createBrowserRouter([
     element:<BlogPage/>
   },
   {
-    path:"/JobDesc",
+    path:"/JobDescription",
     element:<JobDescription/>
+  },
+  {
+    path:"/BlogDescription",
+    element:<BlogDescription/>
   }
 ]);
 

@@ -44,7 +44,7 @@ function JobDescription() {
                 <h1 className='font-bold text-xl'>WebSite Developer</h1>
 
                 <div className='lg:flex lg:gap-10'>
-                    <div className='bg-white w-[70%] md:w-[50%] h-[40%] flex flex-col p-4 space-y-2 rounded-3xl'>
+                    <div className='bg-white w-[70%] md:w-[50%] h-[40%] lg:w-[30%] flex flex-col p-4 space-y-2 rounded-3xl'>
                         <h3 className='text-lg font-semibold'>Job Information</h3>
 
                         <h4 className='font-[Inter] text-sm'>Employee Type</h4>
