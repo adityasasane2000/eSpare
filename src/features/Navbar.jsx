@@ -14,7 +14,7 @@ function Navbar() {
   const navigate = useNavigate();
 
   function handleChange(event) {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setSelect(event.target.value);
     navigate(`/${event.target.value}`);
   }

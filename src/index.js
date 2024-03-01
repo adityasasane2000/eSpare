@@ -19,6 +19,10 @@ import CareerPage from './pages/CareerPage';
 import BlogPage from './pages/BlogPage';
 import JobDescription from './pages/JobDescription';
 import BlogDescription from './pages/BlogDescription';
+import LoginPage from './admin/pages/LoginPage';
+import Dashboard from './admin/pages/Dashboard';
+import AddJob from './admin/pages/AddJob';
+import AddBlog from './admin/pages/AddBlog';
 
 const router = createBrowserRouter([
   {
@@ -84,6 +88,22 @@ const router = createBrowserRouter([
   {
     path:"/BlogDescription",
     element:<BlogDescription/>
+  },
+  {
+    path:"/admin",
+    element:<LoginPage/>
+  },
+  {
+    path:"/admin/dashboard",
+    element:<Dashboard/>
+  },
+  {
+    path:"/admin/dashboard/addnewjob",
+    element:<AddJob/>
+  },
+  {
+    path:"/admin/dashboard/addnewblog",
+    element:<AddBlog/>
   }
 ]);
 
